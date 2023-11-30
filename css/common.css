@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: bisque;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+    }
+.container {
+    display:flex;
+    justify-content: flex-end;
+    background: orange;
+    padding:5px;
+    width: auto;
+}
+.hanbmenu
+{
+    display: none;
+}
+.navi_header {
+    margin:3px auto 5px 20px ;
+}
+.navi_header .text {
+    font-size: 25px;
+    width: 200px;
+}
+.menu {
+    width:200px;
+    height:40px;
+    margin:5px;
+}
+
+.menu :hover {
+    background:orangered;
+    border-radius: 15px;
+}
+
+.text {
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+.menu .text
+{
+    font-size:18px;
+}
+.profile
+{
+   margin:15px 0px 0px 0px ;
+}
+.profile .title
+{
+    margin:auto;
+    width:1100px;
+}
+.profile .title span
+{
+    font-size: 16px;
+    padding-left: 10px;
+}
+.title
+{
+    border-bottom: solid;
+    font-size: 36px;
+}
+.contents
+{
+    border-radius: 5px;
+    width: 1000px;
+    height: 400px;
+    margin:auto;
+}
+.contents p
+{
+    font-size: 28px;
+    color: black;
+    margin:15px;
+    font-weight:600;
+}
+.contents span
+{
+    color:indigo;
+    font-weight:500;
+}
+.gallery .title
+{
+    margin:auto;
+    width:1100px;
+}
+.gallery span
+{
+    font-size:16px;
+    padding-left: 10px;
+}
+.gallery a img
+{
+    width: 30px;
+    height: 30px;
+}
+.slider{
+    margin: 100px auto;
+    width: 50%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+.slick-prev::before,
+.slick-next::before {
+    color:black!important;
+}
+li {
+	position: relative;
+}
+dl {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 16px 24px;
+	box-sizing: border-box;
+	color: #fff;
+	background: rgba(205,92,92,.9);
+}
+
+.slider dl {
+	opacity: 0;
+	transform: translateY(100%);
+	transition: opacity .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.slider:hover dl {
+	opacity: 1;
+	transform: none;
+}
+.menu1
+{
+    display: none;
+}
+.menu-btn
+{
+    display: none;
+}
+.text1
+{
+    display: none;
+}
+.hanbnavi
+{
+    display:none;
+}
+@media screen and (max-width: 500px){
+    ul {
+        list-style: none;
+    }
+    .container{
+        display: none;
+    }
+    .container .menu
+    {
+        width: 100px;
+    }
+    .contents
+    {
+        margin: 0 ;
+    }
+    .title
+    {
+        width: 200px;
+    }
+    .contents
+    {
+        width:480px;
+        height: 250px;
+    }
+    .contents p
+    {
+        font-size: 20px;
+        width: 450px;
+        margin: 0px;
+        padding: 5px;
+    }
+    .hanbtext
+    {
+        width: 480px;
+        text-align: center;
+    }
+    .profile .title
+    {
+        width:500px;
+    }
+    .gallery .title
+    {
+        width: 500px;
+    }
+    .gallery
+    {
+        margin-top: 40px;
+    }
+    .text1
+    {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 5px;
+        display: block;
+        width: 300px;
+        padding-left: 20px;
+    }
+    .textall
+    {
+        background-color: orange;
+        display: block;
+        width: 500px;
+        height: 60px;
+    }
+    .hanbnavi a
+    {
+        color: #fff;
+    }
+    .hanbnavi
+    {
+        background: #000;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        text-align: center;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 29px;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+        text-decoration:none;
+    }
+    .open .hanbnavi {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    .menu-btn
+    {
+        position:fixed;
+        float: left;
+        top: 10px;
+        right: 20px;
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #444444;
+        color: #fff;
+    }
+    
+}
